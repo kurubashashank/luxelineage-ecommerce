@@ -1,0 +1,129 @@
+:root {
+  --primary: #0D5EA6;
+  --accent: #EAA64D;
+  --deep: #C78A3B;
+  --muted: #A16D28;
+}
+
+.orders-container {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #e3f2fd, #fff3e0);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.orders-title {
+  font-size: 32px;
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.back-products-btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s ease;
+}
+
+.back-products-btn:hover {
+  background-color: var(--muted);
+  transform: translateY(-2px);
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+}
+
+.order-card h4 {
+  margin-bottom: 10px;
+  color: var(--deep);
+}
+
+.order-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.order-items {
+  padding-left: 18px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.download-btn {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 12px;
+}
+
+.download-btn:hover {
+  background-color: var(--deep);
+  transform: scale(1.03);
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-top: 60px;
+}
+.edit-order-btn,
+.cancel-order-btn {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-order-btn {
+  background-color: var(--primary);
+  color: white;
+}
+
+.edit-order-btn:hover {
+  background-color: var(--deep);
+}
+
+.cancel-order-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-order-btn:hover {
+  background-color: #c62828;
+}

@@ -1,0 +1,129 @@
+:root {
+  --primary: #0D5EA6;
+  --accent: #EAA64D;
+  --deep: #C78A3B;
+  --muted: #A16D28;
+  --light-bg: #fdfcfb;
+}
+
+.home-container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e3f2fd, #fff3e0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.home-subtitle {
+  font-size: 20px;
+  color: var(--deep);
+  margin-bottom: 40px;
+}
+
+.featured-title {
+  font-size: 28px;
+  color: var(--accent);
+  margin-bottom: 25px;
+}
+
+.featured-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-card h4 {
+  margin: 12px 0 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #444;
+  padding: 0 12px 12px;
+  min-height: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 28px;
+  }
+
+  .home-subtitle {
+    font-size: 18px;
+  }
+
+  .featured-title {
+    font-size: 22px;
+  }
+
+  .product-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 24px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+
+  .product-card h4 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 13px;
+  }
+}

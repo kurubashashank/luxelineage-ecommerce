@@ -1,0 +1,129 @@
+:root {
+  --primary: #0D5EA6;
+  --accent: #EAA64D;
+  --deep: #C78A3B;
+  --rich: #A16D28;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--primary);
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent);
+  text-shadow: 1px 1px 2px #00000044;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.hello-user {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+  text-align: right;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+
+.home-buttons button {
+  background-color: var(--deep);
+  color: white;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.home-buttons button:hover {
+  background-color: var(--accent);
+  transform: scale(1.07);
+}
+
+.search-bar {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-left {
+    justify-content: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .hello-user {
+    text-align: center;
+  }
+}

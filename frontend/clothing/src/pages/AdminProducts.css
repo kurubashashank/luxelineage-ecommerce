@@ -1,0 +1,150 @@
+:root {
+  --primary: #0D5EA6;
+  --accent: #EAA64D;
+  --deep: #C78A3B;
+  --dark: #A16D28;
+  --danger: #f44336;
+  --danger-dark: #d32f2f;
+  --bg: #fdf8f3;
+}
+
+.admin-products-container {
+  min-height: 100vh;
+  background-color: var(--bg);
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.admin-products-container h2,
+.admin-products-container h3 {
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.back-home-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: var(--dark);
+  transform: scale(1.05);
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.admin-form input,
+.admin-form button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.admin-form input[type='file'] {
+  border: none;
+}
+
+.admin-form button {
+  background-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-form button:hover {
+  background-color: var(--dark);
+  transform: scale(1.04);
+}
+
+.admin-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.admin-product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.admin-product-card:hover {
+  transform: translateY(-4px);
+}
+
+.admin-product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.admin-product-card h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: var(--primary);
+}
+
+.admin-product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.product-actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-actions button:first-child {
+  background-color: var(--primary);
+  color: white;
+}
+
+.product-actions button:first-child:hover {
+  background-color: var(--deep);
+}
+
+.product-actions button:last-child {
+  background-color: var(--danger);
+  color: white;
+}
+
+.product-actions button:last-child:hover {
+  background-color: var(--danger-dark);
+}

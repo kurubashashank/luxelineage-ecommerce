@@ -1,0 +1,130 @@
+:root {
+  --primary: #0D5EA6;
+  --accent: #EAA64D;
+  --deep: #C78A3B;
+  --muted: #A16D28;
+}
+
+.admin-orders-container {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f0f8ff, #fff3e0);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: var(--muted);
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.filter-bar button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.admin-order-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.admin-order-card:hover {
+  transform: scale(1.01);
+}
+
+.admin-order-card p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.order-items-list {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.order-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.order-actions select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.invoice-btn {
+  background-color: var(--deep);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.invoice-btn:hover {
+  background-color: var(--accent);
+}
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.no-orders {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  margin-top: 30px;
+}

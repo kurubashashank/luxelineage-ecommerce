@@ -1,0 +1,139 @@
+:root {
+  --primary: #0D5EA6;
+  --accent: #EAA64D;
+  --deep: #C78A3B;
+  --muted: #A16D28;
+}
+
+.track-users-container {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom right, #f1f9ff, #fff8ee);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.track-users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.track-users-header h2 {
+  color: var(--primary);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.back-home-btn {
+  background-color: var(--muted);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.back-home-btn:hover {
+  background-color: var(--deep);
+  transform: scale(1.05);
+}
+
+.search-pagination-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.search-pagination-bar input {
+  padding: 12px 16px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.users-table th,
+.users-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.users-table th {
+  background-color: var(--primary);
+  color: white;
+}
+
+.users-table td button {
+  margin: 2px 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background-color: var(--accent);
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e59c2e;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 6px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.no-img {
+  font-size: 13px;
+  color: #888;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}

@@ -1,0 +1,111 @@
+:root {
+  --primary: #0D5EA6;
+  --accent: #EAA64D;
+  --deep: #C78A3B;
+  --muted: #A16D28;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+.signup-container h2 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="file"] {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.signup-container input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(234, 166, 77, 0.2);
+  outline: none;
+}
+
+.signup-container .file-label {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 6px;
+  text-align: left;
+}
+
+.signup-container button {
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-container button:hover {
+  background-color: var(--deep);
+  transform: translateY(-2px);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+
+  .signup-container h2 {
+    font-size: 24px;
+  }
+
+  .signup-container button {
+    font-size: 15px;
+  }
+}
